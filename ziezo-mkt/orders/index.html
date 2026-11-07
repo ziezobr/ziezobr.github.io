@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#111510" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    (() => {
+      let theme = 'light';
+      try { if (localStorage.getItem('theme') === 'dark') theme = 'dark'; } catch {}
+      const root = document.documentElement;
+      root.dataset.theme = theme;
+      root.classList.toggle('light', theme === 'light');
+      root.classList.toggle('dark', theme === 'dark');
+      root.style.colorScheme = theme;
+    })();
+  </script>
   <title>ZIEZO MKT — Estratégia, criatividade e tecnologia</title>
   <link rel="canonical" href="https://ziezobr.github.io/ziezo-mkt/" />
   <meta property="og:url" content="https://ziezobr.github.io/ziezo-mkt/" />
@@ -12,8 +24,8 @@
   <meta property="og:title" content="ZIEZO — Sempre conectados" />
   <meta property="og:description" content="Sua próxima grande ideia. Nosso próximo projeto. Marketing, design e tecnologia para sua marca." />
   <link rel="icon" href="/ziezo-mkt/favicon.ico" />
-  <script type="module" crossorigin src="/ziezo-mkt/assets/index-BQZKY_19.js"></script>
-  <link rel="stylesheet" crossorigin href="/ziezo-mkt/assets/index-Pkp29GYX.css">
+  <script type="module" crossorigin src="/ziezo-mkt/assets/index-CiS90kwi.js"></script>
+  <link rel="stylesheet" crossorigin href="/ziezo-mkt/assets/index-C3lwaQpn.css">
 </head>
 <body>
   <div id="root"></div>
